@@ -1,0 +1,15 @@
+.gray-color {
+    color: #55565B
+}
+
+.main-container {
+    height: 100vh !important;
+}
+
+.select-padding {
+    padding: 0.8rem 0.8rem;
+}
+
+.label-input {
+    font-size: 0.9rem;
+}
