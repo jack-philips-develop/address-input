@@ -352,14 +352,14 @@ export function AustraliaFormComponent() {
 
     const convertedList = [
         { id: 1, name: 'Select' },
-        { id: 1, name: 'Australian Capital Territory' },
-        { id: 1, name: 'New South Wales' },
-        { id: 1, name: 'Northern Territory' },
-        { id: 1, name: 'Queensland' },
-        { id: 1, name: 'South Australia' },
-        { id: 1, name: 'Tasmania' },
-        { id: 1, name: 'Victoria' },
-        { id: 1, name: 'Western Australia' },
+        { id: 2, name: 'Australian Capital Territory' },
+        { id: 3, name: 'New South Wales' },
+        { id: 4, name: 'Northern Territory' },
+        { id: 5, name: 'Queensland' },
+        { id: 6, name: 'South Australia' },
+        { id: 7, name: 'Tasmania' },
+        { id: 8, name: 'Victoria' },
+        { id: 9, name: 'Western Australia' },
     ]
 
     return (
@@ -404,6 +404,199 @@ export function AustriaFormComponent() {
             <div className='row mx-0'>
                 <Input containerClassName='mt-4 me-3 col-4 col-lg-3 col-md-4 col-sm-4' id={1} label='Postal code' />
                 <Input containerClassName='mt-4 col-8 col-lg-5 col-md-5 col-sm-8' id={1} label='City' isImportant='true' />
+            </div>
+        </div>
+    )
+}
+
+export function AzerbaijanFormComponent() {
+    return (
+        <div className='my-4'>
+            <div className='row mx-0 px-0 d-flex justify-content-start gap-3'>
+                <Input containerClassName='col' id={1} label='First name' isImportant='true' />
+                <Input containerClassName='col' id={1} label='Middle Name' />
+                <Input containerClassName='col' id={1} label='Last name' isImportant='true' />
+            </div>
+            <Input containerClassName='mt-5' id={1} label='Organization' />
+            <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <div className='row mx-0'>
+                <Input containerClassName='mt-4 me-3 col-4 col-lg-3 col-md-4 col-sm-4' id={1} label='Postal code' />
+                <Input containerClassName='mt-4 col-8 col-lg-5 col-md-5 col-sm-8' id={1} label='City' isImportant='true' />
+            </div>
+        </div>
+    )
+}
+
+export function BahamasFormComponent() {
+
+    const convertedList = [
+        { id: 1, name: 'Select' },
+        { id: 2, name: 'Abaco' },
+        { id: 3, name: 'Acklins' },
+        { id: 4, name: 'Andros' },
+        { id: 5, name: 'Berry Islands' },
+        { id: 6, name: 'Bimini' },
+        { id: 7, name: 'Cat Island' },
+        { id: 8, name: 'Crooked Island' },
+        { id: 9, name: 'Eleuthera' },
+        { id: 10, name: 'Exuma' },
+        { id: 11, name: 'Grand Bahama' },
+        { id: 12, name: 'Harbour Island' },
+        { id: 13, name: 'Inagua' },
+        { id: 14, name: 'Long Island' },
+        { id: 15, name: 'Mayaguana' },
+        { id: 16, name: 'New Providence' },
+        { id: 17, name: 'Ragged Island' },
+        { id: 18, name: 'Rum Cay' },
+        { id: 19, name: 'San Salvador' },
+        { id: 20, name: 'Spanish Wells' },
+    ]
+
+    return (
+        <div className='my-4'>
+            <div className='row mx-0 px-0 d-flex justify-content-start gap-3'>
+                <Input containerClassName='col' id={1} label='First name' isImportant='true' />
+                <Input containerClassName='col' id={1} label='Last name' isImportant='true' />
+            </div>
+            <Input containerClassName='mt-5' id={1} label='Organization' />
+            <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <div className='row mx-0 d-flex'>
+                <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' />
+                <div className='mt-4 col-6 col-lg-6 col-md-6 col-sm-6'>
+                    <div className='d-flex w-100'>
+                        <p className='m-0 p-0 mb-1 text-dark ms-0 label-input'>Island</p>
+                        <span className='text-danger'>*</span>
+                    </div>
+                    <Select selectClassName='mb-4 w-100' options={convertedList} selectedOption={() => console.log('***data')} />
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export function BahrainFormComponent() {
+    return (
+        <div className='my-4'>
+            <div className='row mx-0 px-0 d-flex justify-content-start gap-3'>
+                <Input containerClassName='col' id={1} label='First name' isImportant='true' />
+                <Input containerClassName='col' id={1} label='Last name' isImportant='true' />
+            </div>
+            <Input containerClassName='mt-5' id={1} label='Organization' />
+            <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <div className='row mx-0 gap-3'>
+                <Input containerClassName='mt-4 col-8 col-lg-7 col-md-7 col-sm-8' id={1} label='City' isImportant='true' />
+                <Input containerClassName='mt-4 me-3 col-4 col-lg-4 col-md-4 col-sm-4' id={1} label='Postal code' />
+            </div>
+        </div>
+    )
+}
+
+export function BangladeshFormComponent() {
+    return (
+        <div className='my-4'>
+            <div className='row mx-0 px-0 d-flex justify-content-start gap-3'>
+                <Input containerClassName='col' id={1} label='First name' isImportant='true' />
+                <Input containerClassName='col' id={1} label='Last name' isImportant='true' />
+            </div>
+            <Input containerClassName='mt-5' id={1} label='Organization' />
+            <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <div className='row mx-0 gap-3'>
+                <Input containerClassName='mt-4 col-8 col-lg-7 col-md-7 col-sm-8' id={1} label='City' isImportant='true' />
+                <Input containerClassName='mt-4 me-3 col-4 col-lg-4 col-md-4 col-sm-4' id={1} label='Postal code' />
+            </div>
+        </div>
+    )
+}
+
+export function BarbadosFormComponent() {
+
+    const convertedList = [
+        { id: 1, name: 'Select' },
+        { id: 2, name: 'Christ Church' },
+        { id: 3, name: 'Saint Andrew' },
+        { id: 4, name: 'Saint George' },
+        { id: 5, name: 'Saint James' },
+        { id: 6, name: 'Saint John' },
+        { id: 7, name: 'Saint Joseph' },
+        { id: 8, name: 'Sain Lucky' },
+        { id: 9, name: 'Saint Michael' },
+        { id: 10, name: 'Saint Peter' },
+        { id: 11, name: 'Saint Philip' },
+        { id: 12, name: 'Saint Thomas' },
+    ]
+
+    return (
+        <div className='my-4'>
+            <div className='row mx-0 px-0 d-flex justify-content-start gap-3'>
+                <Input containerClassName='col' id={1} label='First name' isImportant='true' />
+                <Input containerClassName='col' id={1} label='Last name' isImportant='true' />
+            </div>
+            <Input containerClassName='mt-5' id={1} label='Organization' />
+            <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <div className='row mx-0 d-flex'>
+                <Input containerClassName='mt-4 col-6 col-lg-8 col-md-8 col-sm-6' id={1} label='City' />
+                <div className='mt-4 col-6 col-lg-4 col-md-4 col-sm-6'>
+                    <div className='d-flex w-100'>
+                        <p className='m-0 p-0 mb-1 text-dark ms-0 label-input'>Parish</p>
+                        <span className='text-danger'>*</span>
+                    </div>
+                    <Select selectClassName='mb-4 w-100' options={convertedList} selectedOption={() => console.log('***data')} />
+                </div>
+            </div>
+            <div className='row mx-0'>
+                <Input containerClassName=' me-3 col-4 col-lg-4 col-md-4 col-sm-4' id={1} label='Postal code' />
+            </div>
+        </div>
+    )
+}
+
+export function BelarusFormComponent() {
+    return (
+        <div className='my-4'>
+            <div className='row mx-0 px-0 d-flex justify-content-start gap-3'>
+                <Input containerClassName='col' id={1} label='First name' isImportant='true' />
+                <Input containerClassName='col' id={1} label='Middle Name' />
+                <Input containerClassName='col' id={1} label='Last name' isImportant='true' />
+            </div>
+            <Input containerClassName='mt-5' id={1} label='Organization' />
+            <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <div className='row mx-0'>
+                <Input containerClassName='mt-4 me-3 col-6 col-lg-3 col-md-4 col-sm-6' id={1} label='Postal code' />
+                <Input containerClassName='mt-4 col-6 col-lg-5 col-md-5 col-sm-6' id={1} label='City' isImportant='true' />
+            </div>
+            <div className='row mx-0'>
+                <Input containerClassName='mt-4 col-7' id={1} label='Region' />
+            </div>
+        </div>
+    )
+}
+
+export function BelgiumFormComponent() {
+    return (
+        <div className='my-4'>
+            <div className='row mx-0 px-0 d-flex justify-content-start gap-3'>
+                <Input containerClassName='col' id={1} label='First name' isImportant='true' />
+                <Input containerClassName='col' id={1} label='Last name' isImportant='true' />
+            </div>
+            <Input containerClassName='mt-5' id={1} label='Organization' />
+            <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <Input containerClassName='mt-0' id={1} label='' />
+            <div className='row mx-0'>
+                <Input containerClassName='mt-4 me-3 col-6 col-lg-3 col-md-4 col-sm-6' id={1} label='Postal code' />
+                <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' isImportant='true' />
             </div>
         </div>
     )

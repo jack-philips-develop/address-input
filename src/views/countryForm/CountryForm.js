@@ -1,5 +1,5 @@
 import React from 'react';
-import { AfghanistanFormComponent, AlandIslandsFormComponent, AlbaniaFormComponent, AlgeriaFormComponent, AmericanSamoaFormComponent, AndorraFormComponent, AngolaFormComponent, AnguillaFormComponent, AntarcticaFormComponent, AntiguaBarbudaFormComponent, ArgentinaFormComponent, ArmeniaFormComponent, ArubaBarbudaFormComponent, ArubaFormComponent, AscensionIslandFormComponent, AustraliaFormComponent, AustriaFormComponent, } from '../../resources/CountriesAddressComponents';
+import { AfghanistanFormComponent, AlandIslandsFormComponent, AlbaniaFormComponent, AlgeriaFormComponent, AmericanSamoaFormComponent, AndorraFormComponent, AngolaFormComponent, AnguillaFormComponent, AntarcticaFormComponent, AntiguaBarbudaFormComponent, ArgentinaFormComponent, ArmeniaFormComponent, ArubaBarbudaFormComponent, ArubaFormComponent, AscensionIslandFormComponent, AustraliaFormComponent, AustriaFormComponent, AzerbaijanFormComponent, BahamasFormComponent, BahrainFormComponent, BangladeshFormComponent, BarbadosFormComponent, BelarusFormComponent, BelgiumFormComponent, } from '../../resources/CountriesAddressComponents';
 
 export default function CountryForm({ selectedCountry }) {
 
@@ -58,6 +58,27 @@ export default function CountryForm({ selectedCountry }) {
       case 16:
         return <AustriaFormComponent />
         break;
+      case 17:
+        return <AzerbaijanFormComponent />
+        break;
+      case 18:
+        return <BahamasFormComponent />
+        break;
+      case 19:
+        return <BahrainFormComponent />
+        break;
+      case 20:
+        return <BangladeshFormComponent />
+        break;
+      case 21:
+        return <BarbadosFormComponent />
+        break;
+      case 22:
+        return <BelarusFormComponent />
+        break;
+      case 23:
+        return <BelgiumFormComponent />
+        break;
       default:
         return <div></div>
     }
@@ -65,7 +86,7 @@ export default function CountryForm({ selectedCountry }) {
 
   return (
     <div>
-      {countryHandler(16)}
+      {countryHandler(23)}
     </div>
   )
 }
