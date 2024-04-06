@@ -20,6 +20,10 @@ import {provinceList as Philippines_provinceList} from "./options/phiippines";
 import {regionList as Russia_regionList} from "./options/russia";
 import {islandList as Seychelles_islandList} from "./options/seychelles";
 import {provinceList as Somalia_provinceList} from "./options/somalia";
+import {doSiList as SouthKorea_doSiList} from "./options/south-korea";
+import {provinceList as Spain_provinceList} from "./options/spain";
+import {islandList as StKittsNevis_islandList} from "./options/st-kitts-nevis";
+import {provinceList as Suriname_provinceList} from "./options/suriname";
 
 export function AfghanistanFormComponent() {
   return (
@@ -1349,6 +1353,441 @@ export function SomaliaFormComponent() {
                         selectedOption={(option) => setSelectedProvince(option)}/>
             </div>
             <Input containerClassName='mt-4 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'/>
+        </div>
+    </div>)
+}
+export function SouthAfricaFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='Suburb'/>
+        </div>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City'
+                   isImportant={'true'}/>
+        </div>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'
+                   isImportant={'true'}/>
+        </div>
+    </div>)
+}
+
+export function SouthGeorgiaSouthSandwichIslandsFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City'
+                   isImportant={'true'}/>
+        </div>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'
+                   isImportant={'true'}/>
+        </div>
+    </div>)
+}
+
+export function SouthKoreaFormComponent() {
+    const [selectedDoSi, setSelectedDoSi] = useState(0);
+
+    function convertDoSisToObjects(list) {
+        return list.map((country, index) => ({
+            id: index, name: country//?.toLowerCase()
+        }))
+    }
+
+    const doSisList = convertDoSisToObjects(SouthKorea_doSiList);
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='District'/>
+        </div>
+        <div className='d-flex mx-0'>
+            {/* 💥 todo -> implement below select box by changing do/si option */}
+            <Input containerClassName='mt-4 col-6 col-lg-4 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+        </div>
+        <div className='d-flex mx-0'>
+            <div className={'mt-4 mx-0 col-6 col-lg-4'}>
+                <Select selectClassName='mb-0 col-12' label='Do/Si'
+                        isImportant={'true'}
+                        options={doSisList}
+                        selectedOption={(option) => setSelectedDoSi(option)}/>
+            </div>
+        </div>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'
+                   isImportant='true'/>
+        </div>
+    </div>)
+}
+
+export function SouthSudanFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City'
+                   isImportant={'true'}/>
+        </div>
+    </div>)
+}
+
+export function SpainFormComponent() {
+    const [selectedProvince, setSelectedProvince] = useState(0);
+
+    function convertProvincesToObjects(list) {
+        return list.map((country, index) => ({
+            id: index, name: country//?.toLowerCase()
+        }))
+    }
+
+    const provincesList = convertProvincesToObjects(Spain_provinceList);
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'
+                   isImportant={'true'}/>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+            <div className={'mt-4 col-6 col-lg-3'}>
+                <Select selectClassName='mb-4 col-12' label='Province'
+                        isImportant={'true'}
+                        options={provincesList}
+                        selectedOption={(option) => setSelectedProvince(option)}/>
+            </div>
+        </div>
+    </div>)
+}
+
+export function SriLankaFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+        </div>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'/>
+        </div>
+    </div>)
+}
+
+export function StBarthélemyFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'
+                   isImportant={'true'}/>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+        </div>
+    </div>)
+}
+
+export function StHelenaFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+        </div>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'
+                   isImportant={'true'}/>
+        </div>
+    </div>)
+}
+
+export function StKittsNevisFormComponent() {
+    const [selectedIsland, setSelectedIsland] = useState(0);
+
+    function convertIslandsToObjects(list) {
+        return list.map((country, index) => ({
+            id: index, name: country//?.toLowerCase()
+        }))
+    }
+
+    const islandsList = convertIslandsToObjects(StKittsNevis_islandList);
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+            <div className={'mt-4 col-6 col-lg-3'}>
+                <Select selectClassName='mb-4 col-12' label='Island'
+                        isImportant={'true'}
+                        options={islandsList}
+                        selectedOption={(option) => setSelectedIsland(option)}/>
+            </div>
+        </div>
+    </div>)
+}
+
+export function StLuciaFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+        </div>
+    </div>)
+}
+
+export function StMartinFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'
+                   isImportant={'true'}/>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+        </div>
+    </div>)
+}
+
+export function StPierreMiquelonFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'
+                   isImportant={'true'}/>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+        </div>
+    </div>)
+}
+
+export function StVincentGrenadinesFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+            <Input containerClassName='mt-4 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'/>
+        </div>
+    </div>)
+}
+
+export function SudanFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='District'
+                   isImportant={'true'}/>
+        </div>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'/>
+        </div>
+    </div>)
+}
+
+export function SurinameFormComponent() {
+    const [selectedProvince, setSelectedProvince] = useState(0);
+
+    function convertProvincesToObjects(list) {
+        return list.map((country, index) => ({
+            id: index, name: country//?.toLowerCase()
+        }))
+    }
+
+    const provincesList = convertProvincesToObjects(Suriname_provinceList);
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+        </div>
+        <div className='d-flex mx-0'>
+            <div className={'mt-4 col-6 col-lg-3'}>
+                <Select selectClassName='mb-4 col-12' label='Province'
+                        options={provincesList}
+                        selectedOption={(option) => setSelectedProvince(option)}/>
+            </div>
+        </div>
+    </div>)
+}
+
+export function SvalbardJanMayenFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'
+                   isImportant={'true'}/>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='Post town' isImportant='true'/>
+        </div>
+    </div>)
+}
+
+export function SwedenFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'
+                   isImportant={'true'}/>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='Post town'
+                   isImportant='true'/>
+        </div>
+    </div>)
+}
+
+export function SwitzerlandFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'
+                   isImportant={'true'}/>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='Post town'
+                   isImportant='true'/>
+        </div>
+    </div>)
+}
+
+export function SyriaFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='District' isImportant='true'/>
         </div>
     </div>)
 }
