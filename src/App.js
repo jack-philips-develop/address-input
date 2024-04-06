@@ -5,7 +5,7 @@ import '../src/styles/common.css';
 export default function App() {
   return (
     <div>
-      <MainContainer />
+      <MainContainer/>
     </div>
   )
 }
