@@ -1,92 +1,115 @@
 import React from 'react';
-import { AfghanistanFormComponent, AlandIslandsFormComponent, AlbaniaFormComponent, AlgeriaFormComponent, AmericanSamoaFormComponent, AndorraFormComponent, AngolaFormComponent, AnguillaFormComponent, AntarcticaFormComponent, AntiguaBarbudaFormComponent, ArgentinaFormComponent, ArmeniaFormComponent, ArubaBarbudaFormComponent, ArubaFormComponent, AscensionIslandFormComponent, AustraliaFormComponent, AustriaFormComponent, AzerbaijanFormComponent, BahamasFormComponent, BahrainFormComponent, BangladeshFormComponent, BarbadosFormComponent, BelarusFormComponent, BelgiumFormComponent, } from '../../resources/CountriesAddressComponents';
+import {
+  AfghanistanFormComponent,
+  AlandIslandsFormComponent,
+  AlbaniaFormComponent,
+  AlgeriaFormComponent,
+  AmericanSamoaFormComponent,
+  AndorraFormComponent,
+  AngolaFormComponent,
+  AnguillaFormComponent,
+  AntarcticaFormComponent,
+  AntiguaBarbudaFormComponent,
+  ArgentinaFormComponent,
+  ArmeniaFormComponent,
+  ArubaBarbudaFormComponent,
+  ArubaFormComponent,
+  AscensionIslandFormComponent,
+  AustraliaFormComponent,
+  AustriaFormComponent,
+  AzerbaijanFormComponent,
+  BahamasFormComponent,
+  BahrainFormComponent,
+  BangladeshFormComponent,
+  BarbadosFormComponent,
+  BelarusFormComponent,
+  BelgiumFormComponent,
+} from '../../resources/CountriesAddressComponents';
 
-export default function CountryForm({ selectedCountry }) {
+export default function CountryForm({selectedCountry}) {
 
-  console.log('***selectedCountry', selectedCountry)
+  console.log('*** selectedCountry', selectedCountry)
 
   const countryHandler = (selectedCountry) => {
-    switch (selectedCountry) {
+    switch (Number(selectedCountry)) {
       case 0:
         return <div></div>
         break;
       case 1:
-        return <AfghanistanFormComponent />
+        return <AfghanistanFormComponent/>
         break;
       case 2:
-        return <AlandIslandsFormComponent />
+        return <AlandIslandsFormComponent/>
         break;
       case 3:
-        return <AlbaniaFormComponent />
+        return <AlbaniaFormComponent/>
         break;
       case 4:
-        return <AlgeriaFormComponent />
+        return <AlgeriaFormComponent/>
         break;
       case 5:
-        return <AmericanSamoaFormComponent />
+        return <AmericanSamoaFormComponent/>
         break;
       case 6:
-        return <AndorraFormComponent />
+        return <AndorraFormComponent/>
         break;
       case 7:
-        return <AngolaFormComponent />
+        return <AngolaFormComponent/>
         break;
       case 8:
-        return <AnguillaFormComponent />
+        return <AnguillaFormComponent/>
         break;
       case 9:
-        return <AntarcticaFormComponent />
+        return <AntarcticaFormComponent/>
         break;
       case 10:
-        return <AntiguaBarbudaFormComponent />
+        return <AntiguaBarbudaFormComponent/>
         break;
       case 11:
-        return <ArgentinaFormComponent />
+        return <ArgentinaFormComponent/>
         break;
       case 12:
-        return <ArmeniaFormComponent />
+        return <ArmeniaFormComponent/>
         break;
       case 13:
-        return <ArubaFormComponent />
+        return <ArubaFormComponent/>
         break;
       case 14:
-        return <AscensionIslandFormComponent />
+        return <AscensionIslandFormComponent/>
         break;
       case 15:
-        return <AustraliaFormComponent />
+        return <AustraliaFormComponent/>
         break;
       case 16:
-        return <AustriaFormComponent />
+        return <AustriaFormComponent/>
         break;
       case 17:
-        return <AzerbaijanFormComponent />
+        return <AzerbaijanFormComponent/>
         break;
       case 18:
-        return <BahamasFormComponent />
+        return <BahamasFormComponent/>
         break;
       case 19:
-        return <BahrainFormComponent />
+        return <BahrainFormComponent/>
         break;
       case 20:
-        return <BangladeshFormComponent />
+        return <BangladeshFormComponent/>
         break;
       case 21:
-        return <BarbadosFormComponent />
+        return <BarbadosFormComponent/>
         break;
       case 22:
-        return <BelarusFormComponent />
+        return <BelarusFormComponent/>
         break;
       case 23:
-        return <BelgiumFormComponent />
+        return <BelgiumFormComponent/>
         break;
       default:
         return <div></div>
     }
   };
 
-  return (
-    <div>
-      {countryHandler(23)}
-    </div>
-  )
+  return (<div>
+    {countryHandler(selectedCountry)}
+  </div>)
 }
