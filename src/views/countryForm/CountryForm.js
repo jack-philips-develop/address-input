@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   AfghanistanFormComponent,
   AlandIslandsFormComponent,
@@ -76,264 +76,411 @@ import {
   VietnamFormComponent,
   WallisFutunaFormComponent,
   WesternSaharaFormComponent,
-  YemenFormComponent, ZambiaFormComponent, ZimbabweFormComponent,
-} from '../../resources/CountriesAddressComponents';
+  YemenFormComponent,
+  ZambiaFormComponent,
+  ZimbabweFormComponent,
+  EquatorialGuineaFormComponent,
+  EritreaFormComponent,
+  EstoniaFormComponent,
+  EswatiniFormComponent,
+  EthiopiaFormComponent,
+  FalklandIslandsFormComponent,
+  FaroeIslandsFormComponent,
+  FijiFormComponent,
+  FinlandFormComponent,
+  FranceFormComponent,
+  FrenchGuianaFormComponent,
+  FrenchPolynesiaFormComponent,
+  FrenchSouthernTerritoriesFormComponent,
+  GabonFormComponent,
+  GambiaFormComponent,
+  GeorgiaFormComponent,
+  GermanyFormComponent,
+  GhanaFormComponent,
+  GibraltarFormComponent,
+  GreeceFormComponent,
+  GreenlandFormComponent,
+  GrenadaFormComponent,
+  GuadeloupeFormComponent,
+  GuamFormComponent,
+  GuatemalaFormComponent,
+  GuernseyFormComponent,
+  GuineaBissauFormComponent,
+  GuineaFormComponent,
+  GuyanaFormComponent,
+  HaitiFormComponent,
+  HeardMcdonaldIslandsFormComponent,
+  HondurasFormComponent,
+  HongKongSarChinaFormComponent,
+  HungaryFormComponent,
+  IcelandFormComponent,
+  IndiaFormComponent,
+  IndonesiaFormComponent,
+  IranFormComponent,
+  IraqFormComponent,
+  IrelandFormComponent,
+  IsleOfManFormComponent,
+  IsraelFormComponent,
+  ItalyFormComponent,
+  JamaicaFormComponent,
+  JapanFormComponent,
+  JerseyFormComponent,
+  JordanFormComponent,
+  KazakhstanFormComponent,
+  KenyaFormComponent,
+  KiribatiFormComponent,
+  KosovoFormComponent,
+} from "../../resources/CountriesAddressComponents";
 
-export default function CountryForm({selectedCountry}) {
-
-  console.log('*** selectedCountry', selectedCountry)
+export default function CountryForm({ selectedCountry }) {
+  console.log("*** selectedCountry", selectedCountry);
 
   const countryHandler = (selectedCountry) => {
     switch (Number(selectedCountry)) {
       case 0:
-        return <div></div>
+        return <div></div>;
         break;
       case 1:
-        return <AfghanistanFormComponent/>
+        return <AfghanistanFormComponent />;
         break;
       case 2:
-        return <AlandIslandsFormComponent/>
+        return <AlandIslandsFormComponent />;
         break;
       case 3:
-        return <AlbaniaFormComponent/>
+        return <AlbaniaFormComponent />;
         break;
       case 4:
-        return <AlgeriaFormComponent/>
+        return <AlgeriaFormComponent />;
         break;
       case 5:
-        return <AmericanSamoaFormComponent/>
+        return <AmericanSamoaFormComponent />;
         break;
       case 6:
-        return <AndorraFormComponent/>
+        return <AndorraFormComponent />;
         break;
       case 7:
-        return <AngolaFormComponent/>
+        return <AngolaFormComponent />;
         break;
       case 8:
-        return <AnguillaFormComponent/>
+        return <AnguillaFormComponent />;
         break;
       case 9:
-        return <AntarcticaFormComponent/>
+        return <AntarcticaFormComponent />;
         break;
       case 10:
-        return <AntiguaBarbudaFormComponent/>
+        return <AntiguaBarbudaFormComponent />;
         break;
       case 11:
-        return <ArgentinaFormComponent/>
+        return <ArgentinaFormComponent />;
         break;
       case 12:
-        return <ArmeniaFormComponent/>
+        return <ArmeniaFormComponent />;
         break;
       case 13:
-        return <ArubaFormComponent/>
+        return <ArubaFormComponent />;
         break;
       case 14:
-        return <AscensionIslandFormComponent/>
+        return <AscensionIslandFormComponent />;
         break;
       case 15:
-        return <AustraliaFormComponent/>
+        return <AustraliaFormComponent />;
         break;
       case 16:
-        return <AustriaFormComponent/>
+        return <AustriaFormComponent />;
         break;
       case 17:
-        return <AzerbaijanFormComponent/>
+        return <AzerbaijanFormComponent />;
         break;
       case 18:
-        return <BahamasFormComponent/>
+        return <BahamasFormComponent />;
         break;
       case 19:
-        return <BahrainFormComponent/>
+        return <BahrainFormComponent />;
         break;
       case 20:
-        return <BangladeshFormComponent/>
+        return <BangladeshFormComponent />;
         break;
       case 21:
-        return <BarbadosFormComponent/>
+        return <BarbadosFormComponent />;
         break;
       case 22:
-        return <BelarusFormComponent/>
+        return <BelarusFormComponent />;
         break;
       case 23:
-        return <BelgiumFormComponent/>
+        return <BelgiumFormComponent />;
         break;
-
-//! developer : Javad Rahati =>
+      case 74:
+        return <EquatorialGuineaFormComponent />;
+      case 75:
+        return <EritreaFormComponent />;
+      case 76:
+        return <EstoniaFormComponent />;
+      case 77:
+        return <EswatiniFormComponent />;
+      case 78:
+        return <EthiopiaFormComponent />;
+      case 79:
+        return <FalklandIslandsFormComponent />;
+      case 80:
+        return <FaroeIslandsFormComponent />;
+      case 81:
+        return <FijiFormComponent />;
+      case 82:
+        return <FinlandFormComponent />;
+      case 83:
+        return <FranceFormComponent />;
+      case 84:
+        return <FrenchGuianaFormComponent />;
+      case 85:
+        return <FrenchPolynesiaFormComponent />;
+      case 86:
+        return <FrenchSouthernTerritoriesFormComponent />;
+      case 87:
+        return <GabonFormComponent />;
+      case 88:
+        return <GambiaFormComponent />;
+      case 89:
+        return <GeorgiaFormComponent />;
+      case 90:
+        return <GermanyFormComponent />;
+      case 91:
+        return <GhanaFormComponent />;
+      case 92:
+        return <GibraltarFormComponent />;
+      case 93:
+        return <GreeceFormComponent />;
+      case 94:
+        return <GreenlandFormComponent />;
+      case 95:
+        return <GrenadaFormComponent />;
+      case 96:
+        return <GuadeloupeFormComponent />;
+      case 97:
+        return <GuamFormComponent />;
+      case 98:
+        return <GuatemalaFormComponent />;
+      case 99:
+        return <GuernseyFormComponent />;
+      case 100:
+        return <GuineaFormComponent />;
+      case 101:
+        return <GuineaBissauFormComponent />;
+      case 102:
+        return <GuyanaFormComponent />;
+      case 103:
+        return <HaitiFormComponent />;
+      case 104:
+        return <HeardMcdonaldIslandsFormComponent />;
+      case 105:
+        return <HondurasFormComponent />;
+      case 106:
+        return <HongKongSarChinaFormComponent />;
+      case 107:
+        return <HungaryFormComponent />;
+      case 108:
+        return <IcelandFormComponent />;
+      case 109:
+        return <IndiaFormComponent />;
+      case 110:
+        return <IndonesiaFormComponent />;
+      case 111:
+        return <IranFormComponent />;
+      case 112:
+        return <IraqFormComponent />;
+      case 113:
+        return <IrelandFormComponent />;
+      case 114:
+        return <IsleOfManFormComponent />;
+      case 115:
+        return <IsraelFormComponent />;
+      case 116:
+        return <ItalyFormComponent />;
+      case 117:
+        return <JamaicaFormComponent />;
+      case 118:
+        return <JapanFormComponent />;
+      case 119:
+        return <JerseyFormComponent />;
+      case 120:
+        return <JordanFormComponent />;
+      case 121:
+        return <KazakhstanFormComponent />;
+      case 122:
+        return <KenyaFormComponent />;
+      case 123:
+        return <KiribatiFormComponent />;
+      case 124:
+        return <KosovoFormComponent />;
       case 150:
-        return <MoldovaFormComponent/>
+        return <MoldovaFormComponent />;
         break;
       case 151:
-        return <MonacoFormComponent/>
+        return <MonacoFormComponent />;
         break;
       case 152:
-        return <MongoliaFormComponent/>
+        return <MongoliaFormComponent />;
         break;
       case 153:
-        return <MontenegroFormComponent/>
+        return <MontenegroFormComponent />;
         break;
       case 154:
-        return <MontserratFormComponent/>
+        return <MontserratFormComponent />;
         break;
       case 155:
-        return <MoroccoFormComponent/>
+        return <MoroccoFormComponent />;
         break;
       case 156:
-        return <MozambiqueFormComponent/>
+        return <MozambiqueFormComponent />;
         break;
       case 157:
-        return <MyanmarBurmaFormComponent/>
+        return <MyanmarBurmaFormComponent />;
         break;
       case 158:
-        return <NamibiaFormComponent/>
+        return <NamibiaFormComponent />;
         break;
       case 159:
-        return <NauruFormComponent/>
+        return <NauruFormComponent />;
         break;
       case 160:
-        return <NepalFormComponent/>
+        return <NepalFormComponent />;
         break;
       case 161:
-        return <NetherlandsFormComponent/>
+        return <NetherlandsFormComponent />;
         break;
       case 162:
-        return <NewCaledoniaFormComponent/>
+        return <NewCaledoniaFormComponent />;
         break;
       case 163:
-        return <NewZealandFormComponent/>
+        return <NewZealandFormComponent />;
         break;
       case 164:
-        return <NicaraguaFormComponent/>
+        return <NicaraguaFormComponent />;
         break;
       case 165:
-        return <NigerFormComponent/>
+        return <NigerFormComponent />;
         break;
       case 166:
-        return <NigeriaFormComponent/>
+        return <NigeriaFormComponent />;
         break;
       case 167:
-        return <NiueFormComponent/>
+        return <NiueFormComponent />;
         break;
       case 168:
-        return <NorfolkIslandFormComponent/>
+        return <NorfolkIslandFormComponent />;
         break;
       case 169:
-        return <NorthKoreaFormComponent/>
+        return <NorthKoreaFormComponent />;
         break;
       case 170:
-        return <NorthMacedoniaFormComponent/>
+        return <NorthMacedoniaFormComponent />;
         break;
       case 171:
-        return <NorthernMarianaIslandsFormComponent/>
+        return <NorthernMarianaIslandsFormComponent />;
         break;
       case 172:
-        return <NorwayFormComponent/>
+        return <NorwayFormComponent />;
         break;
       case 173:
-        return <OmanFormComponent/>
+        return <OmanFormComponent />;
         break;
 
       case 226:
-        return <TanzaniaFormComponent/>
+        return <TanzaniaFormComponent />;
         break;
       case 227:
-        return <ThailandFormComponent/>
+        return <ThailandFormComponent />;
         break;
       case 228:
-        return <TimorLesteComponent/>
+        return <TimorLesteComponent />;
         break;
       case 229:
-        return <TogoFormComponent/>
+        return <TogoFormComponent />;
         break;
       case 230:
-        return <TokelauFormComponent/>
+        return <TokelauFormComponent />;
         break;
       case 231:
-        return <TongaFormComponent/>
+        return <TongaFormComponent />;
         break;
       case 232:
-        return <TrinidadTobagoFormComponent/>
+        return <TrinidadTobagoFormComponent />;
         break;
       case 233:
-        return <TristanDaCunhaFormComponent/>
+        return <TristanDaCunhaFormComponent />;
         break;
       case 234:
-        return <TunisiaFormComponent/>
+        return <TunisiaFormComponent />;
         break;
       case 235:
-        return <TurkeyFormComponent/>
+        return <TurkeyFormComponent />;
         break;
       case 236:
-        return <TurkmenistanFormComponent/>
+        return <TurkmenistanFormComponent />;
         break;
       case 237:
-        return <TurksCaicosIslandsFormComponent/>
+        return <TurksCaicosIslandsFormComponent />;
         break;
       case 238:
-        return <TuvaluFormComponent/>
+        return <TuvaluFormComponent />;
         break;
       case 239:
-        return <USOutlyingIslandsFormComponent/>
+        return <USOutlyingIslandsFormComponent />;
         break;
       case 240:
-        return <USVirginIslandsFormComponent/>
+        return <USVirginIslandsFormComponent />;
         break;
       case 241:
-        return <UgandaFormComponent/>
+        return <UgandaFormComponent />;
         break;
       case 242:
-        return <UkraineFormComponent/>
+        return <UkraineFormComponent />;
         break;
       case 243:
-        return <UnitedArabEmiratesFormComponent/>
+        return <UnitedArabEmiratesFormComponent />;
         break;
       case 244:
-        return <UnitedKingdomFormComponent/>
+        return <UnitedKingdomFormComponent />;
         break;
       case 245:
-        return <UnitedStatesFormComponent/>
+        return <UnitedStatesFormComponent />;
         break;
       case 246:
-        return <UruguayFormComponent/>
+        return <UruguayFormComponent />;
         break;
       case 247:
-        return <UzbekistanFormComponent/>
+        return <UzbekistanFormComponent />;
         break;
       case 248:
-        return <VanuatuFormComponent/>
+        return <VanuatuFormComponent />;
         break;
       case 249:
-        return <VaticanCityFormComponent/>
+        return <VaticanCityFormComponent />;
         break;
       case 250:
-        return <VenezuelaFormComponent/>
+        return <VenezuelaFormComponent />;
         break;
       case 251:
-        return <VietnamFormComponent/>
+        return <VietnamFormComponent />;
         break;
       case 252:
-        return <WallisFutunaFormComponent/>
+        return <WallisFutunaFormComponent />;
         break;
       case 253:
-        return <WesternSaharaFormComponent/>
+        return <WesternSaharaFormComponent />;
         break;
       case 254:
-        return <YemenFormComponent/>
+        return <YemenFormComponent />;
         break;
       case 255:
-        return <ZambiaFormComponent/>
+        return <ZambiaFormComponent />;
         break;
-
       case 256:
-        return <ZimbabweFormComponent/>
+        return <ZimbabweFormComponent />;
         break;
-//!  <= developer : Javad Rahati
-
       default:
-        return <div></div>
+        return <div></div>;
     }
   };
 
-  return (<div>
-    {countryHandler(selectedCountry)}
-  </div>)
+  return <div>{countryHandler(selectedCountry)}</div>;
 }
