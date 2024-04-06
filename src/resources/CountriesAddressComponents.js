@@ -24,6 +24,7 @@ import {doSiList as SouthKorea_doSiList} from "./options/south-korea";
 import {provinceList as Spain_provinceList} from "./options/spain";
 import {islandList as StKittsNevis_islandList} from "./options/st-kitts-nevis";
 import {provinceList as Suriname_provinceList} from "./options/suriname";
+import {countyList as Taiwan_countyList} from "./options/taiwan";
 
 export function AfghanistanFormComponent() {
   return (
@@ -6660,6 +6661,60 @@ export function TogoFormComponent() {
     </div>
   );
 }
+
+export function TaiwanFormComponent() {
+    const [selectedCounty, setSelectedCounty] = useState(0);
+
+    function convertCountiesToObjects(list) {
+        return list.map((country, index) => ({
+            id: index, name: country//?.toLowerCase()
+        }))
+    }
+
+    const countiesList = convertCountiesToObjects(Taiwan_countyList);
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            {/* 💥 todo -> implement below select box based on states */}
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-4 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+            <div className={'mt-4 me-3 col-6 col-lg-4'}>
+                <Select selectClassName='mb-4 col-12' label='Country'
+                        isImportant={'true'}
+                        options={countiesList}
+                        selectedOption={(option) => setSelectedCounty(option)}/>
+            </div>
+            <Input containerClassName='mt-4 col-6 col-lg-4 col-md-4 col-sm-6' id={1} label='Postal code'
+                   isImportant={'true'}/>
+        </div>
+    </div>)
+}
+
+export function TajikistanFormComponent() {
+
+    return (<div className='my-4'>
+        <div className='d-flex mx-0 px-0 d-flex justify-content-start gap-3'>
+            <Input containerClassName='col' id={1} label='First name' isImportant='true'/>
+            <Input containerClassName='col' id={1} label='Last name' isImportant='true'/>
+        </div>
+        <Input containerClassName='mt-5' id={1} label='Organization'/>
+        <Input containerClassName='mt-4' id={1} label='Street address' isImportant='true'/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <Input containerClassName='mt-0' id={1} label=''/>
+        <div className='d-flex mx-0'>
+            <Input containerClassName='mt-4 me-3 col-6 col-lg-3 col-md-6 col-sm-6' id={1} label='Postal code'/>
+            <Input containerClassName='mt-4 col-6 col-lg-6 col-md-6 col-sm-6' id={1} label='City' isImportant='true'/>
+        </div>
+    </div>)
+}
+
 export function TokelauFormComponent() {
   return (
     <div className="my-4">
