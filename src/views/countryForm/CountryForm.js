@@ -130,6 +130,32 @@ import {
   KenyaFormComponent,
   KiribatiFormComponent,
   KosovoFormComponent,
+  BelizeFormComponent,
+  BeninFormComponent,
+  BermudaFormComponent,
+  BhutanFormComponent,
+  BoliviaFormComponent,
+  BosniaHerzegovinaFormComponent,
+  BotswanaFormComponent,
+  BouvetIslandFormComponent,
+  BrazilFormComponent,
+  BritishIndianOceanTerritoryFormComponent,
+  BritishVirginIslandsFormComponent,
+  BruneiFormComponent,
+  BulgariaFormComponent,
+  BurkinaFasoFormComponent,
+  BurundiFormComponent,
+  CambodiaFormComponent,
+  CameroonFormComponent,
+  CanadaFormComponent,
+  CanaryIslandsFormComponent,
+  CapeVerdeFormComponent,
+  CaribbeanNetherlandsFormComponent,
+  CaymanIslandsFormComponent,
+  CentralAfricanRepublicFormComponent,
+  CeutaMelillaFormComponent,
+  ChadFormComponent,
+  ChileFormComponent,
 } from "../../resources/CountriesAddressComponents";
 
 export default function CountryForm({ selectedCountry }) {
@@ -208,6 +234,87 @@ export default function CountryForm({ selectedCountry }) {
         break;
       case 23:
         return <BelgiumFormComponent />;
+        break;
+      case 23:
+        return <BelgiumFormComponent />
+        break;
+      case 24:
+        return <BelizeFormComponent />
+        break;
+      case 25:
+        return <BeninFormComponent />
+        break;
+      case 26:
+        return <BermudaFormComponent />
+        break;
+      case 27:
+        return <BhutanFormComponent />
+        break;
+      case 28:
+        return <BoliviaFormComponent />
+        break;
+      case 29:
+        return <BosniaHerzegovinaFormComponent />
+        break;
+      case 30:
+        return <BotswanaFormComponent />
+        break;
+      case 31:
+        return <BouvetIslandFormComponent />
+        break;
+      case 32:
+        return <BrazilFormComponent />
+        break;
+      case 33:
+        return <BritishIndianOceanTerritoryFormComponent />
+        break;
+      case 34:
+        return <BritishVirginIslandsFormComponent />
+        break;
+      case 35:
+        return <BruneiFormComponent />
+        break;
+      case 36:
+        return <BulgariaFormComponent />
+        break;
+      case 37:
+        return <BurkinaFasoFormComponent />
+        break;
+      case 38:
+        return <BurundiFormComponent />
+        break;
+      case 39:
+        return <CambodiaFormComponent />
+        break;
+      case 40:
+        return <CameroonFormComponent />
+        break;
+      case 41:
+        return <CanadaFormComponent />
+        break;
+      case 42:
+        return <CanaryIslandsFormComponent />
+        break;
+      case 43:
+        return <CapeVerdeFormComponent />
+        break;
+      case 44:
+        return <CaribbeanNetherlandsFormComponent />
+        break;
+      case 45:
+        return <CaymanIslandsFormComponent />
+        break;
+      case 46:
+        return <CentralAfricanRepublicFormComponent />
+        break;
+      case 47:
+        return <CeutaMelillaFormComponent />
+        break;
+      case 48:
+        return <ChadFormComponent />
+        break;
+      case 49:
+        return <ChileFormComponent />
         break;
       case 74:
         return <EquatorialGuineaFormComponent />;
