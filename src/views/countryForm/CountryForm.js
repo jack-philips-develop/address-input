@@ -42,8 +42,41 @@ import {
   NigerFormComponent,
   NigeriaFormComponent,
   NiueFormComponent,
-  NorfolkIslandFormComponent, NorthernMarianaIslandsFormComponent,
-  NorthKoreaFormComponent, NorthMacedoniaFormComponent, NorwayFormComponent, OmanFormComponent,
+  NorfolkIslandFormComponent,
+  NorthernMarianaIslandsFormComponent,
+  NorthKoreaFormComponent,
+  NorthMacedoniaFormComponent,
+  NorwayFormComponent,
+  OmanFormComponent,
+  TanzaniaFormComponent,
+  ThailandFormComponent,
+  TimorLesteComponent,
+  TogoFormComponent,
+  TokelauFormComponent,
+  TongaFormComponent,
+  TrinidadTobagoFormComponent,
+  TristanDaCunhaFormComponent,
+  TunisiaFormComponent,
+  TurkeyFormComponent,
+  TurkmenistanFormComponent,
+  TurksCaicosIslandsFormComponent,
+  TuvaluFormComponent,
+  UgandaFormComponent,
+  UkraineFormComponent,
+  UnitedArabEmiratesFormComponent,
+  UnitedKingdomFormComponent,
+  UnitedStatesFormComponent,
+  UruguayFormComponent,
+  USOutlyingIslandsFormComponent,
+  USVirginIslandsFormComponent,
+  UzbekistanFormComponent,
+  VanuatuFormComponent,
+  VaticanCityFormComponent,
+  VenezuelaFormComponent,
+  VietnamFormComponent,
+  WallisFutunaFormComponent,
+  WesternSaharaFormComponent,
+  YemenFormComponent, ZambiaFormComponent, ZimbabweFormComponent,
 } from '../../resources/CountriesAddressComponents';
 
 export default function CountryForm({selectedCountry}) {
@@ -197,6 +230,101 @@ export default function CountryForm({selectedCountry}) {
         break;
       case 173:
         return <OmanFormComponent/>
+        break;
+
+      case 226:
+        return <TanzaniaFormComponent/>
+        break;
+      case 227:
+        return <ThailandFormComponent/>
+        break;
+      case 228:
+        return <TimorLesteComponent/>
+        break;
+      case 229:
+        return <TogoFormComponent/>
+        break;
+      case 230:
+        return <TokelauFormComponent/>
+        break;
+      case 231:
+        return <TongaFormComponent/>
+        break;
+      case 232:
+        return <TrinidadTobagoFormComponent/>
+        break;
+      case 233:
+        return <TristanDaCunhaFormComponent/>
+        break;
+      case 234:
+        return <TunisiaFormComponent/>
+        break;
+      case 235:
+        return <TurkeyFormComponent/>
+        break;
+      case 236:
+        return <TurkmenistanFormComponent/>
+        break;
+      case 237:
+        return <TurksCaicosIslandsFormComponent/>
+        break;
+      case 238:
+        return <TuvaluFormComponent/>
+        break;
+      case 239:
+        return <USOutlyingIslandsFormComponent/>
+        break;
+      case 240:
+        return <USVirginIslandsFormComponent/>
+        break;
+      case 241:
+        return <UgandaFormComponent/>
+        break;
+      case 242:
+        return <UkraineFormComponent/>
+        break;
+      case 243:
+        return <UnitedArabEmiratesFormComponent/>
+        break;
+      case 244:
+        return <UnitedKingdomFormComponent/>
+        break;
+      case 245:
+        return <UnitedStatesFormComponent/>
+        break;
+      case 246:
+        return <UruguayFormComponent/>
+        break;
+      case 247:
+        return <UzbekistanFormComponent/>
+        break;
+      case 248:
+        return <VanuatuFormComponent/>
+        break;
+      case 249:
+        return <VaticanCityFormComponent/>
+        break;
+      case 250:
+        return <VenezuelaFormComponent/>
+        break;
+      case 251:
+        return <VietnamFormComponent/>
+        break;
+      case 252:
+        return <WallisFutunaFormComponent/>
+        break;
+      case 253:
+        return <WesternSaharaFormComponent/>
+        break;
+      case 254:
+        return <YemenFormComponent/>
+        break;
+      case 255:
+        return <ZambiaFormComponent/>
+        break;
+
+      case 256:
+        return <ZimbabweFormComponent/>
         break;
 //!  <= developer : Javad Rahati
 
