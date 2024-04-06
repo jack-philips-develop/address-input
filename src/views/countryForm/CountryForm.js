@@ -176,7 +176,57 @@ import {
   DiegoGarciaFormComponent,
   DjiboutiFormComponent,
   DominicaFormComponent,
-  DominicanRepublicFormComponent, EcuadorFormComponent, EgyptFormComponent, ElSalvadorFormComponent,
+  DominicanRepublicFormComponent,
+  EcuadorFormComponent,
+  EgyptFormComponent,
+  ElSalvadorFormComponent,
+  PalestinianTerritoriesFormComponent,
+  PanamaFormComponent,
+  PapuaNewGuineaFormComponent,
+  ParaguayFormComponent,
+  PeruFormComponent,
+  PhilippinesFormComponent,
+  PitcairnIslandsFormComponent,
+  PolandFormComponent,
+  PortugalFormComponent,
+  PuertoRicoFormComponent,
+  QatarFormComponent,
+  RéunionFormComponent,
+  RomaniaFormComponent,
+  RussiaFormComponent,
+  RwandaFormComponent,
+  SamoaFormComponent,
+  SanMarinoFormComponent,
+  SãoToméPríncipeFormComponent,
+  SaudiArabiaFormComponent,
+  SenegalFormComponent,
+  SerbiaFormComponent,
+  SeychellesFormComponent,
+  SierraLeoneFormComponent,
+  SingaporeFormComponent,
+  SintMaartenFormComponent,
+  SlovakiaFormComponent,
+  SloveniaFormComponent,
+  SolomonIslandsFormComponent,
+  SomaliaFormComponent,
+  SouthAfricaFormComponent,
+  SouthGeorgiaSouthSandwichIslandsFormComponent,
+  SouthKoreaFormComponent,
+  SouthSudanFormComponent,
+  SpainFormComponent,
+  SriLankaFormComponent,
+  StBarthélemyFormComponent,
+  StHelenaFormComponent,
+  StKittsNevisFormComponent,
+  StLuciaFormComponent,
+  StMartinFormComponent,
+  StPierreMiquelonFormComponent,
+  StVincentGrenadinesFormComponent,
+  SudanFormComponent,
+  SurinameFormComponent,
+  SvalbardJanMayenFormComponent,
+  SwedenFormComponent,
+  SwitzerlandFormComponent, SyriaFormComponent, TaiwanFormComponent, TajikistanFormComponent, TimorLesteFormComponent,
 } from "../../resources/CountriesAddressComponents";
 
 export default function CountryForm({ selectedCountry }) {
@@ -584,7 +634,156 @@ export default function CountryForm({ selectedCountry }) {
       case 173:
         return <OmanFormComponent />;
         break;
-
+      case 176:
+        return <PalestinianTerritoriesFormComponent/>
+        break;
+      case 177:
+        return <PanamaFormComponent/>
+        break;
+      case 178:
+        return <PapuaNewGuineaFormComponent/>
+        break;
+      case 179:
+        return <ParaguayFormComponent/>
+        break;
+      case 180:
+        return <PeruFormComponent/>
+        break;
+      case 181:
+        return <PhilippinesFormComponent/>
+        break;
+      case 182:
+        return <PitcairnIslandsFormComponent/>
+        break;
+      case 183:
+        return <PolandFormComponent/>
+        break;
+      case 184:
+        return <PortugalFormComponent/>
+        break;
+      case 185:
+        return <PuertoRicoFormComponent/>
+        break;
+      case 186:
+        return <QatarFormComponent/>
+        break;
+      case 187:
+        return <RéunionFormComponent/>
+        break;
+      case 188:
+        return <RomaniaFormComponent/>
+        break;
+      case 189:
+        return <RussiaFormComponent/>
+        break;
+      case 190:
+        return <RwandaFormComponent/>
+        break;
+      case 191:
+        return <SamoaFormComponent/>
+        break;
+      case 192:
+        return <SanMarinoFormComponent/>
+        break;
+      case 193:
+        return <SãoToméPríncipeFormComponent/>
+        break;
+      case 194:
+        return <SaudiArabiaFormComponent/>
+        break;
+      case 195:
+        return <SenegalFormComponent/>
+        break;
+      case 196:
+        return <SerbiaFormComponent/>
+        break;
+      case 197:
+        return <SeychellesFormComponent/>
+        break;
+      case 198:
+        return <SierraLeoneFormComponent/>
+        break;
+      case 199:
+        return <SingaporeFormComponent/>
+        break;
+      case 200:
+        return <SintMaartenFormComponent/>
+        break;
+      case 201:
+        return <SlovakiaFormComponent/>
+        break;
+      case 202:
+        return <SloveniaFormComponent/>
+        break;
+      case 203:
+        return <SolomonIslandsFormComponent/>
+        break;
+      case 204:
+        return <SomaliaFormComponent/>
+        break;
+      case 205:
+        return <SouthAfricaFormComponent/>
+        break;
+      case 206:
+        return <SouthGeorgiaSouthSandwichIslandsFormComponent/>
+        break;
+      case 207:
+        return <SouthKoreaFormComponent/>
+        break;
+      case 208:
+        return <SouthSudanFormComponent/>
+        break;
+      case 209:
+        return <SpainFormComponent/>
+        break;
+      case 210:
+        return <SriLankaFormComponent/>
+        break;
+      case 211:
+        return <StBarthélemyFormComponent/>
+        break;
+      case 212:
+        return <StHelenaFormComponent/>
+        break;
+      case 213:
+        return <StKittsNevisFormComponent/>
+        break;
+      case 214:
+        return <StLuciaFormComponent/>
+        break;
+      case 215:
+        return <StMartinFormComponent/>
+        break;
+      case 216:
+        return <StPierreMiquelonFormComponent/>
+        break;
+      case 217:
+        return <StVincentGrenadinesFormComponent/>
+        break;
+      case 218:
+        return <SudanFormComponent/>
+        break;
+      case 219:
+        return <SurinameFormComponent/>
+        break;
+      case 220:
+        return <SvalbardJanMayenFormComponent/>
+        break;
+      case 221:
+        return <SwedenFormComponent/>
+        break;
+      case 222:
+        return <SwitzerlandFormComponent/>
+        break;
+      case 223:
+        return <SyriaFormComponent/>
+        break;
+      case 224:
+        return <TaiwanFormComponent/>
+        break;
+      case 225:
+        return <TajikistanFormComponent/>
+        break;
       case 226:
         return <TanzaniaFormComponent />;
         break;
