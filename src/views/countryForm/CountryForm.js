@@ -24,9 +24,20 @@ import {
   BarbadosFormComponent,
   BelarusFormComponent,
   BelgiumFormComponent,
+  KuwaitFormComponent,
+  KyrgyzstanFormComponent,
+  LaosFormComponent,
+  LatviaFormComponent,
+  LebanonFormComponent,
+  LesothoFormComponent,
+  LiberiaFormComponent,
+  LibyaFormComponent,
+  LiechtensteinFormComponent,
+  LithuaniaFormComponent,
+  LuxembourgFormComponent,
 } from '../../resources/CountriesAddressComponents';
 
-export default function CountryForm({selectedCountry}) {
+export default function CountryForm({ selectedCountry }) {
 
   console.log('*** selectedCountry', selectedCountry)
 
@@ -36,73 +47,111 @@ export default function CountryForm({selectedCountry}) {
         return <div></div>
         break;
       case 1:
-        return <AfghanistanFormComponent/>
+        return <AfghanistanFormComponent />
         break;
       case 2:
-        return <AlandIslandsFormComponent/>
+        return <AlandIslandsFormComponent />
         break;
       case 3:
-        return <AlbaniaFormComponent/>
+        return <AlbaniaFormComponent />
         break;
       case 4:
-        return <AlgeriaFormComponent/>
+        return <AlgeriaFormComponent />
         break;
       case 5:
-        return <AmericanSamoaFormComponent/>
+        return <AmericanSamoaFormComponent />
         break;
       case 6:
-        return <AndorraFormComponent/>
+        return <AndorraFormComponent />
         break;
       case 7:
-        return <AngolaFormComponent/>
+        return <AngolaFormComponent />
         break;
       case 8:
-        return <AnguillaFormComponent/>
+        return <AnguillaFormComponent />
         break;
       case 9:
-        return <AntarcticaFormComponent/>
+        return <AntarcticaFormComponent />
         break;
       case 10:
-        return <AntiguaBarbudaFormComponent/>
+        return <AntiguaBarbudaFormComponent />
         break;
       case 11:
-        return <ArgentinaFormComponent/>
+        return <ArgentinaFormComponent />
         break;
       case 12:
-        return <ArmeniaFormComponent/>
+        return <ArmeniaFormComponent />
         break;
       case 13:
-        return <ArubaFormComponent/>
+        return <ArubaFormComponent />
         break;
       case 14:
-        return <AscensionIslandFormComponent/>
+        return <AscensionIslandFormComponent />
         break;
       case 15:
-        return <AustraliaFormComponent/>
+        return <AustraliaFormComponent />
         break;
       case 16:
-        return <AustriaFormComponent/>
+        return <AustriaFormComponent />
         break;
       case 17:
-        return <AzerbaijanFormComponent/>
+        return <AzerbaijanFormComponent />
         break;
       case 18:
-        return <BahamasFormComponent/>
+        return <BahamasFormComponent />
         break;
       case 19:
-        return <BahrainFormComponent/>
+        return <BahrainFormComponent />
         break;
       case 20:
-        return <BangladeshFormComponent/>
+        return <BangladeshFormComponent />
         break;
       case 21:
-        return <BarbadosFormComponent/>
+        return <BarbadosFormComponent />
         break;
       case 22:
-        return <BelarusFormComponent/>
+        return <BelarusFormComponent />
         break;
       case 23:
-        return <BelgiumFormComponent/>
+        return <BelgiumFormComponent />
+        break;
+
+
+
+
+
+      case 125:
+        return <KuwaitFormComponent />
+        break;
+      case 126:
+        return <KyrgyzstanFormComponent />
+        break;
+      case 127:
+        return <LaosFormComponent />
+        break;
+      case 128:
+        return <LatviaFormComponent />
+        break;
+      case 129:
+        return <LebanonFormComponent />
+        break;
+      case 130:
+        return <LesothoFormComponent />
+        break;
+      case 131:
+        return <LiberiaFormComponent />
+        break;
+      case 132:
+        return <LibyaFormComponent />
+        break;
+      case 133:
+        return <LiechtensteinFormComponent />
+        break;
+      case 134:
+        return <LithuaniaFormComponent />
+        break;
+      case 135:
+        return <LuxembourgFormComponent />
         break;
       default:
         return <div></div>
