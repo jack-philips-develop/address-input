@@ -85,6 +85,16 @@ import {
   LiechtensteinFormComponent,
   LithuaniaFormComponent,
   LuxembourgFormComponent,
+  MacaoSarChinaComponent,
+  MadagascarFormComponent,
+  MalawiFormComponent,
+  MalaysiaFormComponent,
+  MaldivesFormComponent,
+  MaliFormComponent,
+  MaltaFormComponent,
+  MarshallIslandsFormComponent,
+  MartiniqueFormComponent,
+  MauritaniaFormComponent,
 } from '../../resources/CountriesAddressComponents';
 
 export default function CountryForm({selectedCountry}) {
@@ -353,6 +363,36 @@ export default function CountryForm({selectedCountry}) {
         break;
       case 135:
         return <LuxembourgFormComponent />
+        break;
+      case 136:
+        return <MacaoSarChinaComponent />
+        break;
+      case 137:
+        return <MadagascarFormComponent />
+        break;
+      case 138:
+        return <MalawiFormComponent />
+        break;
+      case 139:
+        return <MalaysiaFormComponent />
+        break;
+      case 140:
+        return <MaldivesFormComponent />
+        break;
+      case 141:
+        return <MaliFormComponent />
+        break;
+      case 142:
+        return <MaltaFormComponent />
+        break;
+      case 143:
+        return <MarshallIslandsFormComponent />
+        break;
+      case 144:
+        return <MartiniqueFormComponent />
+        break;
+      case 145:
+        return <MauritaniaFormComponent />
         break;
       default:
         return <div></div>
