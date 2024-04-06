@@ -226,7 +226,32 @@ import {
   SurinameFormComponent,
   SvalbardJanMayenFormComponent,
   SwedenFormComponent,
-  SwitzerlandFormComponent, SyriaFormComponent, TaiwanFormComponent, TajikistanFormComponent, TimorLesteFormComponent,
+  SwitzerlandFormComponent,
+  SyriaFormComponent,
+  TaiwanFormComponent,
+  TajikistanFormComponent,
+  TimorLesteFormComponent,
+  KuwaitFormComponent,
+  KyrgyzstanFormComponent,
+  LaosFormComponent,
+  LatviaFormComponent,
+  LebanonFormComponent,
+  LesothoFormComponent,
+  LiberiaFormComponent,
+  LibyaFormComponent,
+  LiechtensteinFormComponent,
+  LithuaniaFormComponent,
+  LuxembourgFormComponent,
+  MacaoSarChinaComponent,
+  MadagascarFormComponent,
+  MalawiFormComponent,
+  MalaysiaFormComponent,
+  MaldivesFormComponent,
+  MaliFormComponent,
+  MaltaFormComponent,
+  MarshallIslandsFormComponent,
+  MartiniqueFormComponent,
+  MauritaniaFormComponent, MauritiusFormComponent, MayotteFormComponent, MexicoFormComponent,
 } from "../../resources/CountriesAddressComponents";
 
 export default function CountryForm({ selectedCountry }) {
@@ -562,6 +587,79 @@ export default function CountryForm({ selectedCountry }) {
         return <KiribatiFormComponent />;
       case 124:
         return <KosovoFormComponent />;
+
+      case 125:
+        return <KuwaitFormComponent/>
+        break;
+      case 126:
+        return <KyrgyzstanFormComponent/>
+        break;
+      case 127:
+        return <LaosFormComponent/>
+        break;
+      case 128:
+        return <LatviaFormComponent/>
+        break;
+      case 129:
+        return <LebanonFormComponent/>
+        break;
+      case 130:
+        return <LesothoFormComponent/>
+        break;
+      case 131:
+        return <LiberiaFormComponent/>
+        break;
+      case 132:
+        return <LibyaFormComponent/>
+        break;
+      case 133:
+        return <LiechtensteinFormComponent/>
+        break;
+      case 134:
+        return <LithuaniaFormComponent/>
+        break;
+      case 135:
+        return <LuxembourgFormComponent/>
+        break;
+      case 136:
+        return <MacaoSarChinaComponent/>
+        break;
+      case 137:
+        return <MadagascarFormComponent/>
+        break;
+      case 138:
+        return <MalawiFormComponent/>
+        break;
+      case 139:
+        return <MalaysiaFormComponent/>
+        break;
+      case 140:
+        return <MaldivesFormComponent/>
+        break;
+      case 141:
+        return <MaliFormComponent/>
+        break;
+      case 142:
+        return <MaltaFormComponent/>
+        break;
+      case 143:
+        return <MarshallIslandsFormComponent/>
+        break;
+      case 144:
+        return <MartiniqueFormComponent/>
+        break;
+      case 145:
+        return <MauritaniaFormComponent/>
+        break;
+      case 146:
+        return <MauritiusFormComponent />
+        break;
+      case 147:
+        return <MayotteFormComponent />
+        break;
+      case 148:
+        return <MexicoFormComponent />
+        break;
       case 150:
         return <MoldovaFormComponent />;
         break;
