@@ -24,6 +24,26 @@ import {
   BarbadosFormComponent,
   BelarusFormComponent,
   BelgiumFormComponent,
+  MoldovaFormComponent,
+  MonacoFormComponent,
+  MongoliaFormComponent,
+  MontenegroFormComponent,
+  MontserratFormComponent,
+  MoroccoFormComponent,
+  MozambiqueFormComponent,
+  MyanmarBurmaFormComponent,
+  NamibiaFormComponent,
+  NauruFormComponent,
+  NepalFormComponent,
+  NetherlandsFormComponent,
+  NewCaledoniaFormComponent,
+  NewZealandFormComponent,
+  NicaraguaFormComponent,
+  NigerFormComponent,
+  NigeriaFormComponent,
+  NiueFormComponent,
+  NorfolkIslandFormComponent, NorthernMarianaIslandsFormComponent,
+  NorthKoreaFormComponent, NorthMacedoniaFormComponent, NorwayFormComponent, OmanFormComponent,
 } from '../../resources/CountriesAddressComponents';
 
 export default function CountryForm({selectedCountry}) {
@@ -104,6 +124,82 @@ export default function CountryForm({selectedCountry}) {
       case 23:
         return <BelgiumFormComponent/>
         break;
+
+//! developer : Javad Rahati =>
+      case 150:
+        return <MoldovaFormComponent/>
+        break;
+      case 151:
+        return <MonacoFormComponent/>
+        break;
+      case 152:
+        return <MongoliaFormComponent/>
+        break;
+      case 153:
+        return <MontenegroFormComponent/>
+        break;
+      case 154:
+        return <MontserratFormComponent/>
+        break;
+      case 155:
+        return <MoroccoFormComponent/>
+        break;
+      case 156:
+        return <MozambiqueFormComponent/>
+        break;
+      case 157:
+        return <MyanmarBurmaFormComponent/>
+        break;
+      case 158:
+        return <NamibiaFormComponent/>
+        break;
+      case 159:
+        return <NauruFormComponent/>
+        break;
+      case 160:
+        return <NepalFormComponent/>
+        break;
+      case 161:
+        return <NetherlandsFormComponent/>
+        break;
+      case 162:
+        return <NewCaledoniaFormComponent/>
+        break;
+      case 163:
+        return <NewZealandFormComponent/>
+        break;
+      case 164:
+        return <NicaraguaFormComponent/>
+        break;
+      case 165:
+        return <NigerFormComponent/>
+        break;
+      case 166:
+        return <NigeriaFormComponent/>
+        break;
+      case 167:
+        return <NiueFormComponent/>
+        break;
+      case 168:
+        return <NorfolkIslandFormComponent/>
+        break;
+      case 169:
+        return <NorthKoreaFormComponent/>
+        break;
+      case 170:
+        return <NorthMacedoniaFormComponent/>
+        break;
+      case 171:
+        return <NorthernMarianaIslandsFormComponent/>
+        break;
+      case 172:
+        return <NorwayFormComponent/>
+        break;
+      case 173:
+        return <OmanFormComponent/>
+        break;
+//!  <= developer : Javad Rahati
+
       default:
         return <div></div>
     }
