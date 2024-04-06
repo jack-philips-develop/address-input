@@ -156,6 +156,27 @@ import {
   CeutaMelillaFormComponent,
   ChadFormComponent,
   ChileFormComponent,
+  ChinaFormComponent,
+  ChristmasIslandFormComponent,
+  ClippertonIslandFormComponent,
+  CocosIslandsFormComponent,
+  ColombiaFormComponent,
+  ComorosFormComponent,
+  CongoBrazzavilleFormComponent,
+  CongoKinshasaFormComponent,
+  CookIslandsFormComponent,
+  CostaRicaFormComponent,
+  CôteDIvoireFormComponent,
+  CroatiaFormComponent,
+  CubaFormComponent,
+  CuraçaoFormComponent,
+  CyprusFormComponent,
+  CzechiaFormComponent,
+  DenmarkFormComponent,
+  DiegoGarciaFormComponent,
+  DjiboutiFormComponent,
+  DominicaFormComponent,
+  DominicanRepublicFormComponent, EcuadorFormComponent, EgyptFormComponent, ElSalvadorFormComponent,
 } from "../../resources/CountriesAddressComponents";
 
 export default function CountryForm({ selectedCountry }) {
@@ -316,6 +337,79 @@ export default function CountryForm({ selectedCountry }) {
       case 49:
         return <ChileFormComponent />
         break;
+      case 50:
+        return <ChinaFormComponent />
+        break;
+      case 51:
+        return <ChristmasIslandFormComponent />
+        break;
+      case 52:
+        return <ClippertonIslandFormComponent />
+        break;
+      case 53:
+        return <CocosIslandsFormComponent />
+        break;
+      case 54:
+        return <ColombiaFormComponent />
+        break;
+      case 55:
+        return <ComorosFormComponent />
+        break;
+      case 56:
+        return <CongoBrazzavilleFormComponent />
+        break;
+      case 57:
+        return <CongoKinshasaFormComponent />
+        break;
+      case 58:
+        return <CookIslandsFormComponent />
+        break;
+      case 59:
+        return <CostaRicaFormComponent />
+        break;
+      case 60:
+        return <CôteDIvoireFormComponent />
+        break;
+      case 61:
+        return <CroatiaFormComponent />
+        break;
+      case 62:
+        return <CubaFormComponent />
+        break;
+      case 63:
+        return <CuraçaoFormComponent />
+        break;
+      case 64:
+        return <CyprusFormComponent />
+        break;
+      case 65:
+        return <CzechiaFormComponent />
+        break;
+      case 66:
+        return <DenmarkFormComponent />
+        break;
+      case 67:
+        return <DiegoGarciaFormComponent />
+        break;
+      case 68:
+        return <DjiboutiFormComponent />
+        break;
+      case 69:
+        return <DominicaFormComponent />
+        break;
+      case 70:
+        return <DominicanRepublicFormComponent />
+        break;
+      case 71:
+        return <EcuadorFormComponent />
+        break;
+      case 72:
+        return <EgyptFormComponent />
+        break;
+      case 73:
+        return <ElSalvadorFormComponent />
+        break;
+
       case 74:
         return <EquatorialGuineaFormComponent />;
       case 75:
